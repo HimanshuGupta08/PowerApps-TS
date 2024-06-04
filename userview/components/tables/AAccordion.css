@@ -1,0 +1,47 @@
+/* AAccordion.css */
+
+.accordion {
+    width: 100%;
+    border: 1px solid #e5e7eb; /* Equivalent to Tailwind's border-gray-200 */
+    border-radius: 0.5rem; /* Equivalent to Tailwind's rounded-md */
+    overflow: hidden;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #e5e7eb; /* Equivalent to Tailwind's border-gray-200 */
+  }
+  
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+  
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem; /* Equivalent to Tailwind's p-4 */
+    background-color: #f9fafb; /* Equivalent to Tailwind's bg-gray-50 */
+    cursor: pointer;
+    font-weight: 500; /* Equivalent to Tailwind's font-medium */
+  }
+  
+  .accordion-header.open {
+    background-color: #e5e7eb; /* Equivalent to Tailwind's bg-gray-200 */
+  }
+  
+  .accordion-content {
+    padding: 1rem; /* Equivalent to Tailwind's p-4 */
+    background-color: #ffffff; /* Equivalent to Tailwind's bg-white */
+  }
+  
+  .arrow {
+    transition: transform 0.2s;
+  }
+  
+  .arrow.right {
+    transform: rotate(0deg);
+  }
+  
+  .arrow.down {
+    transform: rotate(90deg);
+  }
+  

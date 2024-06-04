@@ -1,0 +1,51 @@
+/* UsersViewModalContent.css */
+
+.modal-content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 1.25rem; /* Equivalent to Tailwind's gap-y-5 */
+    overflow-y: auto;
+    background-color: white;
+    padding-bottom: 0.5rem; /* Equivalent to Tailwind's pb-2 */
+  }
+  
+  .modal-header {
+    background-color: #6b21a8; /* Equivalent to Tailwind's bg-purple-600 */
+    padding: 1.5rem; /* Equivalent to Tailwind's p-6 */
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .close-button {
+    border: 1px solid transparent; /* Default border, customize as needed */
+    border-radius: 9999px; /* Equivalent to Tailwind's rounded-full */
+    width: 1rem; /* Equivalent to Tailwind's w-4 */
+    height: 1rem; /* Equivalent to Tailwind's h-4 */
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .close-icon {
+    color: white; /* Equivalent to Tailwind's text-white */
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Equivalent to Tailwind's grid-cols-2 */
+    gap: 0; /* Equivalent to Tailwind's gap-0 */
+    margin-bottom: 1.5rem; /* Equivalent to Tailwind's mb-6 */
+  }
+  
+  .grid-item {
+    padding: 0.5rem;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  

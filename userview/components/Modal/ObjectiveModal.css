@@ -1,0 +1,73 @@
+/* ObjectiveModal.css */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(31, 41, 55, 0.8); /* Equivalent to Tailwind's bg-gray-900/80 */
+  }
+  
+  .modal-container {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .modal-panel {
+    position: relative;
+    margin-left: 4rem; /* Equivalent to Tailwind's ml-16 */
+    display: flex;
+    width: 100%;
+    max-width: 48rem; /* Equivalent to Tailwind's max-w-3xl */
+    flex-grow: 1;
+  }
+  
+  /* Add transition classes */
+  .transition-opacity-enter {
+    transition: opacity 0.3s ease-linear;
+  }
+  
+  .transition-opacity-enter-from {
+    opacity: 0;
+  }
+  
+  .transition-opacity-enter-to {
+    opacity: 1;
+  }
+  
+  .transition-opacity-leave {
+    transition: opacity 0.3s ease-linear;
+  }
+  
+  .transition-opacity-leave-from {
+    opacity: 1;
+  }
+  
+  .transition-opacity-leave-to {
+    opacity: 0;
+  }
+  
+  .transition-transform-enter {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .transition-transform-enter-from {
+    transform: translateX(100%);
+  }
+  
+  .transition-transform-enter-to {
+    transform: translateX(0);
+  }
+  
+  .transition-transform-leave {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .transition-transform-leave-from {
+    transform: translateX(0);
+  }
+  
+  .transition-transform-leave-to {
+    transform: translateX(100%);
+  }
+  
